@@ -17,3 +17,18 @@ class Plotter():
         plt.xlabel("Residuals")
         plt.ylabel("Frequency")
         plt.show()
+
+
+##Histogram plotter
+class HistogramPlotter(Plotter):
+
+    def __init__(self, y_test, y_predictor):
+        super().__init__(y, y_predictor)
+
+
+
+#Scatterplot plotter
+class ScatterPlotter(Plotter):
+    
+    def __init__(self, y_test, y_predictor):
+        super().__init__(y_test, y_predictor)
