@@ -32,3 +32,11 @@ class ScatterPlotter(Plotter):
     
     def __init__(self, y_test, y_predictor):
         super().__init__(y_test, y_predictor)
+     
+def plot(self):
+        df = pd.DataFrame({"y_test":self.y_test, "y_prediction":self.y_prediction})
+        plot.scatter(data = df, x = "y_test", y = "y_predictions", color = "indigo")
+        plt.title("Model Predictions vs Actual Values")
+        plt.xlabel("Actual Values")
+        plt.ylabel("Prediction")
+        plt.show()
