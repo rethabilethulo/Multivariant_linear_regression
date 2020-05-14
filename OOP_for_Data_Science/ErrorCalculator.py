@@ -51,10 +51,10 @@ class ErrorCalculator:
 
         print("error_summary: ")
 
-        std_resid = self.get_standardised_residuals()
+        std_resids = self.get_standardised_residuals()
 
-        print(f"The Mean standard residuals = {std_resid.mean()}")
-        print(f"The minimum standard residuals = {min(std_resid)}")
-        print(f"The maximum standard residuals = {max(std_resid)}")
+        print(f"The Mean standard residuals = {std_resids.mean()}")
+        print(f"The minimum standard residuals = {min(std_resids)}")
+        print(f"The maximum standard residuals = {max(std_resids)}")
         print(f"The Mean Square Error = {self.get_mse()}")
         print(f"The Root Square Mean Error = {self.get_rmse()}")
